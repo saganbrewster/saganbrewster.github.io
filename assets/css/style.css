@@ -4,11 +4,18 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: headerFont;
+    src: url("../fonts/Isometra-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "mainFont", sans-serif;
+    
 }
 
 .layout-container {
@@ -18,7 +25,7 @@
 
 .sidebar {
     width: 260px;
-    background-color: #1e1e2f;
+    background-color: #00b1b4;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -26,24 +33,27 @@
 }
 
 .sidebar-logo {
+    font-family: "headerFont", sans-serif;
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    background-color:#00b1b4;
 }
 
 .sidebar-menu a {
     display: block;
-    color: #b3b3b3;
+    color: #fff5db;
     text-decoration: none;
     padding: 12px 15px;
     margin-bottom: 8px;
     border-radius: 6px;
     transition: 0.3s;
+    background-color: #00b1b4;
 }
 
 .main-content {
     flex-grow: 1;
     padding: 40px;
-    background-color: #f4f5f7;
     overflow-y: auto;
+    background-color: #26F7FD;
 }
