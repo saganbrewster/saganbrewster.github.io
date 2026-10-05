@@ -1,0 +1,49 @@
+@font-face {
+    font-family: mainFont;
+    src: url("/assets/fonts/Wellfleet-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mainFont", sans-serif;
+}
+
+.layout-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-logo {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #f4f5f7;
+    overflow-y: auto;
+}
